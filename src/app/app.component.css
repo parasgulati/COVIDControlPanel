@@ -1,0 +1,19 @@
+.TopBar
+{
+    margin-top:7em;
+}
+#header
+{
+    color:lightcoral;
+    margin-left:2em;
+    margin-top:2em;
+    margin-bottom: 1em;
+}
+#logo
+{
+    width:30%;
+    height:40%;
+    position: absolute;
+    margin-left:50%;
+    margin-top:-11%;
+}

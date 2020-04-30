@@ -1,0 +1,33 @@
+<html>
+  <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>
+      COVID19 Control Panel
+    </title>
+    </head>
+    <body>
+        <hr id="rule">
+        <div class="loginForm form-group">
+          <div class="formHeader">  Login Form </div>
+            <input type="text" class="inputBox form-control" placeholder="Email" type="loginEmail" name="loginEmail"  [(ngModel)]="loginEmail">
+            <input type="text" class="inputBox form-control" placeholder="Password" type="password" name="loginPassword" [(ngModel)]="loginPassword">
+            <br><button class="btn btn-primary" [disabled]="logindisable" (click)="login()">Login</button>
+        </div> 
+        <div class="SignupForm form-group">
+         <div class="formHeader">  Signup Form</div>   
+            <input type="text" class="inputBox form-control" placeholder="Name" type="name" name="name"  [(ngModel)]="name">
+            <input type="text" class="inputBox form-control" placeholder="Email" type="signupEmail" name="signupEmail"  [(ngModel)]="signupEmail">
+            <input type="text" class="inputBox form-control" placeholder="Password" type="password" name="signupPassword" [(ngModel)]="signupPassword">
+            <input type="text" class="inputBox form-control" placeholder="Administrator Password" type="password" name="adminPassword" [(ngModel)]="adminPassword">
+            <br><button class="btn btn-primary" [disabled]="signupdisable" (click)="signup()">Signup</button>
+            <br><br>{{signupMessage}}
+        </div>        
+        <div class="AdminPasswordChange form-group">
+            <div class="formHeader"> Change Administrator Password</div>   
+               <input type="text" class="inputBox form-control" placeholder="Old Admin. Password" type="password" name="oldAdminPassword"  [(ngModel)]="oldAdminPassword">
+               <input type="text" class="inputBox form-control" placeholder="New Admin. Password" type="password" name="newAdminPassword"  [(ngModel)]="newAdminPassword">
+               <br><button class="btn btn-primary" [disabled]="admindisable" (click)="changeAdmin()">Change</button>
+               <br><br>{{adminMessage}}
+           </div>          
+    </body>
+</html>

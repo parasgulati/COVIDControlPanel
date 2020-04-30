@@ -1,0 +1,49 @@
+#rule
+{
+    position: relative;
+    top:5%;
+    margin-top:9%;
+}
+.loginForm
+{
+    position: absolute;
+    border: 2px solid black;
+    border-radius:5px;
+    width:25%;
+    padding:3%;
+    margin-left:5%;
+    margin-top:5%;
+    padding-right: 5%;
+}
+.inputBox
+{
+    padding:2%;
+    margin: 4%;
+}
+.SignupForm
+{
+    position: absolute;
+    border: 2px solid black;
+    border-radius:5px;
+    width:25%;
+    padding:3%;
+    margin-left:35%;
+    padding-right: 5%;
+    margin-top:5%;
+}
+.AdminPasswordChange
+{
+    position: absolute;
+    border: 2px solid black;
+    border-radius:5px;
+    width:25%;
+    padding:3%;
+    margin-left:65%;
+    padding-right: 5%;
+    margin-top:5%;
+}
+.formHeader
+{
+    color:black;
+    font-display:bold;
+}

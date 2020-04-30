@@ -1,0 +1,26 @@
+.SearchForm
+{
+    width:50%;
+    margin-left:5%;
+    margin-top:2%;
+}
+#searchPatientHeading
+{
+    margin-top:1%;
+    margin-left:5%;
+}
+#searchSubHeading
+{
+    margin-top:4%;
+    margin-left:5%;
+}
+#listUpdate
+{
+    margin-left:10%;
+    background-color: lightblue;
+    width:50%;
+    border-radius:4px;
+    border:2px solid black;
+    list-style-type:none;
+    padding:2%;
+}

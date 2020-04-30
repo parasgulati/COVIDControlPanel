@@ -1,0 +1,20 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        </head>
+    <body>
+        <h3 id="searchPatientHeading">Search Patients</h3>
+        <div id="searchSubHeading">Search Patients using one or more criteria </div>
+        <div class="SearchForm form-group">
+            <input type="text" class="form-control" placeholder="State" type="state" name="state"  [(ngModel)]="state">
+            <input type="text" class="form-control" placeholder="City" type="city" name="city" [(ngModel)]="city">
+            <input type="text" class="form-control" placeholder="Pin Code" type="pincode" name="pincode" [(ngModel)]="pincode">
+            <input type="text" class="form-control" placeholder="Locality" type="locality" name="locality" [(ngModel)]="locality">
+            <input type="text" class="form-control" placeholder="District" type="district" name="district" [(ngModel)]="district">
+            <br><button [disabled]="searchDisable" class="btn btn-success" (click)="search()" >Search</button>
+        </div>
+       <div id="searchResult">
+            <ul id="selectSearch" size="10"><li id="listUpdate" *ngFor="let list of result"><B>Name:</B> {{list.name}}<br><B>Username:</B> {{list.username}}<br><B>State:</B> {{list.state}}<br><B>City:</B> {{list.city}}<br><B>Pin Code:</B> {{list.pincode}}<br><b>Locality:</b> {{list.locality}}<br><B>District:</B> {{list.district}}<br><B>IMEI number:</B> {{list.imeiNumber}}</li></ul>
+        </div>
+    </body>
+</html>

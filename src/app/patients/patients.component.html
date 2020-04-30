@@ -1,0 +1,17 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    </head>
+    <body>
+        <h3 id="PatientHeading">Patients</h3>
+        <div id="PatientSubHeading">It shows all updates of a Patient.</div>
+        <div class="SearchForm form-group">
+            <input type="text" class="form-control" placeholder="Username" name="username" [(ngModel)]="username">
+            <br><button [disabled]="patientDisable" class="btn btn-success" (click)="search()">Search</button>
+        </div>
+        <div id="searchResult">
+                <ul id="selectSearch" size="10"><li id="listUpdate" *ngFor="let list of result"><B>Date:</B> {{list.date}}<br><B>Status:</B> {{list.status}}<br><B>Quarantine:</B> {{list.quarantine}}</li></ul>
+  
+            </div>
+    </body>
+</html>

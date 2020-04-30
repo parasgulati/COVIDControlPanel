@@ -1,0 +1,20 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        </head>
+    <body>
+        <h3 id="searchPatientHeading">Patients Not Quarantine</h3>
+        <div id="searchSubHeading">Search Patients who are not quarantine, using one or more criteria </div>
+        <div class="SearchForm form-group">
+            <input type="text" class="form-control" placeholder="State" type="state" name="state"  [(ngModel)]="state">
+            <input type="text" class="form-control" placeholder="City" type="city" name="city" [(ngModel)]="city">
+            <input type="text" class="form-control" placeholder="Pin Code" type="pincode" name="pincode" [(ngModel)]="pincode">
+            <input type="text" class="form-control" placeholder="Locality" type="locality" name="locality" [(ngModel)]="locality">
+            <input type="text" class="form-control" placeholder="District" type="district" name="district" [(ngModel)]="district">
+            <br><button class="btn btn-success" [disabled]="patientDisable" (click)="search()">Search</button>
+        </div>
+       <div id="searchResult">
+            <ul id="selectSearch" size="10"><li id="listUpdate" *ngFor="let list of result"><B>Username:</B> {{list.username}}<br><B>Date:</B> {{list.date}}</li></ul>  
+        </div>
+    </body>
+</html>
